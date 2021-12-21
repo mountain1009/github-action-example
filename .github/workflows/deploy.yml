@@ -1,11 +1,11 @@
-name: "deploy.yml"
+name: "deploy"
 
 on:
   workflow_run:
     workflows:
       - "Ci"
     branches:
-      - develop
+      - main
     types:
       - completed
 jobs:
