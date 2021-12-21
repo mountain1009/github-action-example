@@ -1,0 +1,17 @@
+name: "deploy.yml"
+
+on:
+  workflow_run:
+    workflows:
+      - "Ci"
+    branches:
+      - main
+    types:
+      - completed
+jobs:
+  deploy:
+    name: Deploy
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
