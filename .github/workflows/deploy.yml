@@ -4,9 +4,8 @@ on:
   workflow_run:
     workflows:
       - "Ci"
-#    branches:
-#      - main
-#      - develop
+    branches:
+      - develop
     types:
       - completed
 jobs:
