@@ -5,7 +5,7 @@ on:
     workflows:
       - "Ci"
     branches:
-      - develop
+      - feature/1
     types:
       - completed
 jobs:
